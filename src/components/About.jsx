@@ -8,7 +8,7 @@ export default function About() {
         <div className="about-grid">
           <div className="about-text">
             <p>I am currently pursuing my Bachelor's degree in Information Technology. My academic journey has provided me with a strong foundation in computer science principles, database management, and system architecture.</p>
-            <p>I thrive at the intersection of development and operations, constantly experimenting with cloud technologies, containerization, and automation scripts.</p>
+            <p>I am passionate about designing and building innovative software and hardware solutions, continuously exploring programming, embedded systems, electronics, and modern technologies to create efficient, reliable, and impactful applications.</p>
           </div>
           <div className="about-education">
             <h4>🎓 Education</h4>
