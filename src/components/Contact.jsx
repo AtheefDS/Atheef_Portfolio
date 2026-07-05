@@ -9,7 +9,9 @@ export default function Contact() {
           I'm currently looking for internship and entry-level opportunities. Feel free to reach out!
         </p>
         <div className="social-links" style={{display: 'flex', justifyContent: 'center', gap: '2rem'}}>
-          <a href="mailto:atheefcse@gmail.com" className="btn btn-primary">Email Me</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atheefcse@gmail.com" target="_blank" rel="noreferrer" className="btn btn-primary">
+              Email Me 
+              </a>
           <a href="https://www.linkedin.com/in/mohamed-atheef-it/" target="_blank" rel="noreferrer" className="btn btn-secondary">LinkedIn</a>
           <a href="https://github.com/AtheefDS" target="_blank" rel="noreferrer" className="btn btn-secondary">GitHub</a>
         </div>
