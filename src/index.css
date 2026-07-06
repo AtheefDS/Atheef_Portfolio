@@ -1,12 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
 /* --- ADD THIS BELOW YOUR EXISTING CSS --- */
+/* ---------- COLOR THEME ---------- */
+:root {
+  /* Backgrounds */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+
+  /* Text */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+
+  /* Brand Colors */
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+
+  /* Borders */
+  --border: #dbe4ee;
+
+  /* Extra Colors */
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
 
 /* --- NAVIGATION BAR LAYOUT --- */
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
+ 
   border-bottom: 1px solid var(--border);
   z-index: 1000;
 }
@@ -34,7 +64,8 @@
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--accent);
+  border: 3px solid var(--accent);
+  box-shadow: var(--shadow-md);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -60,7 +91,11 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: radial-gradient(circle at 90% 10%, #eff6ff 0%, #ffffff 60%);
+   background:
+      radial-gradient(circle at top right,
+      #dbeafe 0%,
+      #f8fafc 55%,
+      #ffffff 100%);
   padding-top: 5rem;
 }
 
@@ -91,7 +126,7 @@
 }
 
 .hero .highlight {
-  color: var(--text-primary);
+  color: var(--accent);
   font-weight: 600;
   border-bottom: 3px solid var(--accent);
 }
@@ -120,21 +155,25 @@
 
 .btn-primary {
   background-color: var(--accent);
-  color: black;
+  color: white;
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-primary:hover {
   background-color: var(--accent-hover);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
   background-color: transparent;
+  background: white;
   color: var(--text-primary);
   border: 1px solid var(--border);
 }
 
 .btn-secondary:hover {
   background-color: var(--bg-secondary);
+  background: #f1f5f9;
 }
 
 /* --- GRID LAYOUTS (ABOUT, SKILLS, PROJECTS) --- */
@@ -147,6 +186,9 @@
 .skill-category, .project-card {
   background-color: var(--bg-secondary);
   padding: 2rem;
+  background: white;
+  box-shadow: var(--shadow-sm);
+  transition: all.3s ease;
   border-radius: 8px;
   border: 1px solid var(--border);
 }
@@ -166,8 +208,13 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .hero h1 { font-size: 2.5rem; }
   .hero h2 { font-size: 1.25rem; }
-  .nav-links { display: none; } /* Simplifies mobile view until you build a burger menu */
-}
+  .nav-links { display: none; }} /* Simplifies mobile view until you build a burger menu */
+
+
+
+
+/* ---------- TOKENS ---------- */
